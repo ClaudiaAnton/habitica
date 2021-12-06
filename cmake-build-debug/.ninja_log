@@ -1,0 +1,6 @@
+# ninja log v5
+3	33	1638786457268349448	triedit_autogen/timestamp	ec4a693bd34cfec8
+78	116	1638786356224808842	CMakeFiles/triedit.dir/triedit_autogen/mocs_compilation.cpp.o	33a97e157d6b76e6
+3	33	1638786457268349448	triedit_autogen/mocs_compilation.cpp	ec4a693bd34cfec8
+79	1277	1638786357381814270	CMakeFiles/triedit.dir/main.cpp.o	3b16c4ea41c753d2
+1278	1399	1638786357508010867	triedit	7ae493f1f1ce503b
