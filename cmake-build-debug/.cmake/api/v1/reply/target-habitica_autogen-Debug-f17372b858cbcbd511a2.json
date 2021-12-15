@@ -17,12 +17,12 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "triedit_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"id" : "habitica_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "triedit_autogen::@6890427a1f51a3e7e1df",
+	"id" : "habitica_autogen::@6890427a1f51a3e7e1df",
 	"isGeneratorProvided" : true,
-	"name" : "triedit_autogen",
+	"name" : "habitica_autogen",
 	"paths" : 
 	{
 		"build" : ".",
@@ -51,19 +51,19 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/triedit_autogen",
+			"path" : "cmake-build-debug/CMakeFiles/habitica_autogen",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/triedit_autogen.rule",
+			"path" : "cmake-build-debug/CMakeFiles/habitica_autogen.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/triedit_autogen/timestamp.rule",
+			"path" : "cmake-build-debug/habitica_autogen/timestamp.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

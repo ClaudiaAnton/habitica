@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "triedit"
+			"path" : "habitica"
 		}
 	],
 	"backtrace" : 1,
@@ -32,13 +32,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 29,
+				"line" : 37,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 21,
+				"line" : 29,
 				"parent" : 0
 			},
 			{
@@ -86,7 +86,7 @@
 				},
 				{
 					"backtrace" : 0,
-					"path" : "/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/triedit_autogen/include"
+					"path" : "/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/habitica_autogen/include"
 				},
 				{
 					"backtrace" : 4,
@@ -146,21 +146,21 @@
 			"sourceIndexes" : 
 			[
 				0,
-				3
+				11
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "triedit_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"id" : "habitica_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 0,
-			"id" : "triedit_autogen::@6890427a1f51a3e7e1df"
+			"id" : "habitica_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "triedit::@6890427a1f51a3e7e1df",
+	"id" : "habitica::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -230,8 +230,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "triedit",
-	"nameOnDisk" : "triedit",
+	"name" : "habitica",
+	"nameOnDisk" : "habitica",
 	"paths" : 
 	{
 		"build" : ".",
@@ -244,7 +244,7 @@
 			"sourceIndexes" : 
 			[
 				0,
-				3
+				11
 			]
 		},
 		{
@@ -252,21 +252,29 @@
 			"sourceIndexes" : 
 			[
 				1,
-				2
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				4
+				12
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				5
+				13
 			]
 		}
 	],
@@ -276,8 +284,48 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/triedit_autogen/mocs_compilation.cpp",
+			"path" : "cmake-build-debug/habitica_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "RepoDaily.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "RepoToDo.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "RepoHabits.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Daily.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "UI.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ControllerUser.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "RepoUser.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Habits.h",
+			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
@@ -298,13 +346,13 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/triedit_autogen/timestamp",
+			"path" : "cmake-build-debug/habitica_autogen/timestamp",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/triedit_autogen/timestamp.rule",
+			"path" : "cmake-build-debug/habitica_autogen/timestamp.rule",
 			"sourceGroupIndex" : 3
 		}
 	],

@@ -1,6 +1,14 @@
 # ninja log v5
-3	33	1638786457268349448	triedit_autogen/timestamp	ec4a693bd34cfec8
-78	116	1638786356224808842	CMakeFiles/triedit.dir/triedit_autogen/mocs_compilation.cpp.o	33a97e157d6b76e6
-3	33	1638786457268349448	triedit_autogen/mocs_compilation.cpp	ec4a693bd34cfec8
-79	1277	1638786357381814270	CMakeFiles/triedit.dir/main.cpp.o	3b16c4ea41c753d2
-1278	1399	1638786357508010867	triedit	7ae493f1f1ce503b
+36	1450	1639563151228120224	CMakeFiles/habitica.dir/main.cpp.o	b8ec2bdcfa96c253
+3	27	1639563287135078204	/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/habitica_autogen/timestamp	b67fc9d83e5e2807
+52	84	1639314021139778493	CMakeFiles/habitica.dir/habitica_autogen/mocs_compilation.cpp.o	1dda20dfc354a13a
+3	27	1639563287135078204	habitica_autogen/timestamp	b67fc9d83e5e2807
+287	1407	1638787277469253025	CMakeFiles/triedit.dir/main.cpp.o	8b949f96692f5b46
+7	287	1638787276354555939	/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/triedit_autogen/mocs_compilation.cpp	33f93317e8729601
+7	287	1638787276354555939	triedit_autogen/mocs_compilation.cpp	33f93317e8729601
+1450	1593	1639563151375718611	habitica	a3030a1ed36993a5
+3	27	1639563287135078204	/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/habitica_autogen/mocs_compilation.cpp	b67fc9d83e5e2807
+3	27	1639563287135078204	habitica_autogen/mocs_compilation.cpp	b67fc9d83e5e2807
+287	359	1638787276423169905	CMakeFiles/triedit.dir/triedit_autogen/mocs_compilation.cpp.o	6ca795e3f0a88d94
+7	287	1638787276354555939	/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/triedit_autogen/timestamp	33f93317e8729601
+7	287	1638787276354555939	triedit_autogen/timestamp	33f93317e8729601

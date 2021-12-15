@@ -1,5 +1,5 @@
 {
-	"BUILD_DIR" : "/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/triedit_autogen",
+	"BUILD_DIR" : "/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/habitica_autogen",
 	"CMAKE_BINARY_DIR" : "/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug",
 	"CMAKE_CURRENT_BINARY_DIR" : "/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug",
 	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/antonclaudia/CLionProjects/habitica",
@@ -309,14 +309,62 @@
 		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeParseArguments.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "/Users/antonclaudia/CLionProjects/habitica",
-	"DEP_FILE" : "/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/triedit_autogen/deps",
-	"DEP_FILE_RULE_NAME" : "triedit_autogen/timestamp",
+	"DEP_FILE" : "/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/habitica_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "habitica_autogen/timestamp",
 	"HEADERS" : 
 	[
+		[
+			"/Users/antonclaudia/CLionProjects/habitica/ControllerUser.h",
+			"MU",
+			"EWIEGA46WW/moc_ControllerUser.cpp",
+			null
+		],
+		[
+			"/Users/antonclaudia/CLionProjects/habitica/Daily.h",
+			"MU",
+			"EWIEGA46WW/moc_Daily.cpp",
+			null
+		],
+		[
+			"/Users/antonclaudia/CLionProjects/habitica/Habits.h",
+			"MU",
+			"EWIEGA46WW/moc_Habits.cpp",
+			null
+		],
+		[
+			"/Users/antonclaudia/CLionProjects/habitica/RepoDaily.h",
+			"MU",
+			"EWIEGA46WW/moc_RepoDaily.cpp",
+			null
+		],
+		[
+			"/Users/antonclaudia/CLionProjects/habitica/RepoHabits.h",
+			"MU",
+			"EWIEGA46WW/moc_RepoHabits.cpp",
+			null
+		],
+		[
+			"/Users/antonclaudia/CLionProjects/habitica/RepoToDo.h",
+			"MU",
+			"EWIEGA46WW/moc_RepoToDo.cpp",
+			null
+		],
+		[
+			"/Users/antonclaudia/CLionProjects/habitica/RepoUser.h",
+			"MU",
+			"EWIEGA46WW/moc_RepoUser.cpp",
+			null
+		],
 		[
 			"/Users/antonclaudia/CLionProjects/habitica/ToDoList.h",
 			"MU",
 			"EWIEGA46WW/moc_ToDoList.cpp",
+			null
+		],
+		[
+			"/Users/antonclaudia/CLionProjects/habitica/UI.h",
+			"MU",
+			"EWIEGA46WW/moc_UI.cpp",
 			null
 		],
 		[
@@ -327,8 +375,8 @@
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/triedit_autogen/include",
-	"MOC_COMPILATION_FILE" : "/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/triedit_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/habitica_autogen/include",
+	"MOC_COMPILATION_FILE" : "/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/habitica_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -366,17 +414,17 @@
 		"-c",
 		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/triedit_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/habitica_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 8,
-	"PARSE_CACHE_FILE" : "/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/CMakeFiles/triedit_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/CMakeFiles/habitica_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/Users/antonclaudia/Qt/6.2.1/macos/./libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/Users/antonclaudia/Qt/6.2.1/macos/./libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 2,
-	"SETTINGS_FILE" : "/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/CMakeFiles/triedit_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/CMakeFiles/habitica_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[ "/Users/antonclaudia/CLionProjects/habitica/main.cpp", "MU", null ]

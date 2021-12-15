@@ -1,5 +1,5 @@
 /Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/CMakeFiles/triedit.dir
-/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/CMakeFiles/triedit_autogen_timestamp_deps.dir
-/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/CMakeFiles/triedit_autogen.dir
+/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/CMakeFiles/habitica.dir
+/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/CMakeFiles/habitica_autogen_timestamp_deps.dir
+/Users/antonclaudia/CLionProjects/habitica/cmake-build-debug/CMakeFiles/habitica_autogen.dir

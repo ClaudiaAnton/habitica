@@ -7,17 +7,29 @@
 
 #pragma once
 #include<string>
+#include <vector>
+#include <iostream>
+
 using namespace std;
-#define NUM 100
 
 class ToDoList
 {
 private:
-    string activities[NUM];
+    string username;
+    vector<string> activities;
+
 public:
-    const string *getActivities() const {
-        return activities;
+    ToDoList(const string &username) : username(username){}
+
+    ///Setter-ish
+    void addActivity(const string& st){
+        activities.push_back(st);
     }
+
+    ///Getters
+    const string &getUsername() const {return username;}
+    vector<string> getActivities() {
+        return activities;}
 };
 
 #endif //TRIEDIT_TODOLIST_H
