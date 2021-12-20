@@ -22,14 +22,11 @@ public:
     ToDoList(const string &username) : username(username){}
 
     ///Setter-ish
-    void addActivity(const string& st){
-        activities.push_back(st);
-    }
+    void addActivity(const string& st){activities.push_back(st);}
 
     ///Getters
     const string &getUsername() const {return username;}
-    vector<string> getActivities() {
-        return activities;}
+    vector<string>& getActivities() {return activities;}
 };
 
 #endif //TRIEDIT_TODOLIST_H

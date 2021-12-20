@@ -42,13 +42,13 @@ public:
     User findOne(const string &username);
 
     ///HABITS
-    vector<Habits> getAllHabits(){return repoHabits.getHabits();}
-    void addHabits(const string& username, const string &nume, const string &tip, const string &descriere);
-    vector<Habits> getAllHabitsOfAUser(const string& st);
 
     ///DAILY
     void addDailyDuty(const string&usr, const string&st);
-    vector<string> getAllDailyDutiesOfAUser(const string&usr);
+    void addDoneDuty(const string& usr,const string &st);
+    vector<string> getAllDoneOfAUser(const string& st);
+    vector<string> getInProgressOfAUser(const string& st);
+
 
     ///TODO
     void addToDo(const string& usr, const string&st);
@@ -70,22 +70,6 @@ User ControllerUser::findOne(const string &username) {
     return User{"null",12};
 }
 
-void ControllerUser::addHabits(const string &username, const string &nume, const string &tip, const string &descriere) {
-    User usr= findOne(username);
-    if(usr.getUsername().compare("null")==0) throw ContrError{"This user doesn't exist!"};
-    if(descriere.empty())
-        repoHabits.add(Habits{username,nume,tip});
-    else
-        repoHabits.add(Habits{username,nume,tip,descriere});
-}
-
-vector<Habits> ControllerUser::getAllHabitsOfAUser(const string &st) {
-    vector<Habits> list;
-    for(const auto&i: getAllHabits())
-        if(i.getUsername().compare(st)==0)
-            list.push_back(i);
-    return list;
-}
 
 void ControllerUser::addToDo(const string &username, const string &st) {
     User usr= findOne(username);
@@ -95,10 +79,10 @@ void ControllerUser::addToDo(const string &username, const string &st) {
 
 vector<string> ControllerUser::getAllToDoOfAUser(const string &username) {
     User usr= findOne(username);
+    list<string> list;
     if(usr.getUsername().compare("null")==0) throw ContrError{"This user doesn't exist!"};
     for(ToDoList &i:repoToDo.getall()) {
         if (i.getUsername() == username) {
-            cout<<i.getActivities().size();
             return i.getActivities();
         }
     }
@@ -108,17 +92,16 @@ void ControllerUser::addDailyDuty(const string &usr, const string &st) {
     repoDaily.addAllDuties(usr,st);
 }
 
-vector<string> ControllerUser::getAllDailyDutiesOfAUser(const string &usr) {
-    for(Daily  &i:repoDaily.getall())
-    {
-        if(i.getUsername()==usr){
-            for(const auto&j:i.getDuties())
-                cout<<j<<endl;
-            return i.getDuties();
-        }
-
-    }
+void ControllerUser::addDoneDuty(const string &usr, const string &st) {
+    repoDaily.addDoneTask(usr,st);
 }
+
+vector<string> ControllerUser::getInProgressOfAUser(const string &st) {
+    ///validare user
+    return repoDaily.getAllInProgress(st);
+}
+
+
 
 
 #endif //HABITICA_CONTROLLERUSER_H

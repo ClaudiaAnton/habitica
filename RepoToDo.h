@@ -17,22 +17,19 @@ private:
     vector<ToDoList> todo;
 public:
     void addToDo(const string& usr,const string& st);
-    vector<ToDoList> getall(){return todo;}
+    vector<ToDoList>& getall(){return todo;}
 };
 
 void RepoToDo::addToDo(const string& usr,const string& st) {
-    int ok=0;
     for(ToDoList &i:getall()) {
         if (i.getUsername() == usr) {
             i.addActivity(st);
-            ok = 1;
+            return;
         }
     }
-    if(ok==0) {
-        ToDoList to{usr};
-        to.addActivity(st);
-        todo.push_back(to);
-    }
+    ToDoList to{usr};
+    to.addActivity(st);
+    todo.push_back(to);
 }
 
 

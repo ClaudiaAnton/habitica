@@ -15,42 +15,67 @@ class RepoDaily
 private:
     vector<Daily> daily;
 public:
+    vector<Daily>& getall(){return daily;}
+
+    ///Done
     void addDoneTask(const string &usr,const string& st);
+    vector<string> getAllDone(const string& st);
+
+    ///All Daily
     void addAllDuties(const string& usr,const string& st);
-    vector<Daily> getall(){return daily;}
+    vector<string> getAllDailyDuties(const string&usr);
+
+
+    ///In Progress
+    vector<string> getAllInProgress(const string& usr);
 };
 
-//void RepoDaily::addAllDuties(const string &usr, const string &st) {
-//    daily.push_back(Daily{usr,st});
-//}
-
-//void RepoDaily::addDoneTask(const string &usr, const string &st) {
-//    int ok=1;
-//    for(Daily  &i:getall()){
-//        if(i.getUsername()==usr){
-//            i.addDone(st);ok=0;
-//        }
-//    }
-//    if(ok==1) {
-//        Daily d{usr};
-//        d.addDone(st);
-//        daily.push_back(d);
-//    }
-//}
-//
 void RepoDaily::addAllDuties(const string &usr, const string &st) {
-    int ok=1;
     for(Daily  &i:getall()){
         if(i.getUsername()==usr){
-            //cout<<"am intrat aici";
-            i.addAllDuties(st);ok=0;
+            i.addAllDuties(st);
+            return;
         }
     }
-    if(ok==1) {
-        Daily d{usr};
-        d.addAllDuties(st);
-        daily.push_back(d);
+    Daily d{usr};
+    d.addAllDuties(st);
+    daily.push_back(d);
+
+}
+
+void RepoDaily::addDoneTask(const string &usr, const string &st) {
+    for(Daily  &i:getall()){
+        if(i.getUsername()==usr){
+            i.addDone(st);
+            return;
+        }
     }
+    Daily d{usr};
+    d.addDone(st);
+    daily.push_back(d);
+
+}
+
+vector<string> RepoDaily::getAllDailyDuties(const string &usr) {
+    for(Daily &i:getall())
+        if(i.getUsername()==usr)
+            return i.getDuties();
+}
+
+vector<string> RepoDaily::getAllDone(const string &st) {
+    for(Daily &i:getall())
+        if(i.getUsername()==st)
+            return i.getAllDone();
+}
+
+vector<string> RepoDaily::getAllInProgress(const string &usr) {
+    vector<string> list;
+    for(Daily&i:getall())
+        if(i.getUsername()==usr)
+            for(const string& j: i.getDuties())
+                if(find(i.getAllDone().begin(),i.getAllDone().end(),j)==i.getAllDone().end())
+                    list.push_back(j);
+    return list;
 }
 
 #endif //HABITICA_REPODAILY_H

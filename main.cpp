@@ -1,4 +1,4 @@
-// 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
+//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
 
 //https://stackoverflow.com/questions/47769781/edit-ui-files-with-clion
 
@@ -29,19 +29,24 @@ int main(int argc, char *argv[]) {
     controllerUser.addUser("pop",19);
     controllerUser.addUser("roxi",22);
     controllerUser.addUser("ion",15);
-    ///habits
-    controllerUser.addHabits("ana","n1","pozitiv","");
-    controllerUser.addHabits("ana","n2","negativ","");
-    controllerUser.addHabits("ana","n3","pozitiv","");
-    controllerUser.addHabits("ion","n3","pozitiv","");
-    for(const auto&i:controllerUser.getAllHabitsOfAUser("ion"))
-        cout<<i.getNume()<<" ";
 
-    ///
+
+    ///Daily
     controllerUser.addDailyDuty("ana","idkidk");
     controllerUser.addDailyDuty("ana","de facut");
+    controllerUser.addDailyDuty("ana","csf");
+    controllerUser.addDailyDuty("ana","ojok");
     controllerUser.addDailyDuty("ion","de mancat");
+    controllerUser.addDoneDuty("ana","de facut");
+    for(const auto&i:controllerUser.getInProgressOfAUser("ana"))
+        cout<<i<<endl;
 
+    ///todo
+//    controllerUser.addToDo("ana","idkidk");
+//    controllerUser.addToDo("ana","de facut");
+//    controllerUser.addToDo("ana","okok");
+//    controllerUser.addToDo("ana","csf");
+//    controllerUser.addToDo("ion","de mancat");
 
 
     return 0;
